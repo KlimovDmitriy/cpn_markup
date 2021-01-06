@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+          integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+          crossorigin=""/>
+
+    <title>Центр продажи недвижимости</title>
+</head>
+<body>
+<nav class="container navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#"><img title="лого" src="img/logo.png"></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">О компании</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Услуги</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Отзывы</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Контакты</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Полезная информация</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="top-banner">
+    <div class="container">
+        <div>Позиция меню</div>
+        <div>Позиция меню</div>
+        <div>Позиция меню</div>
+        <div>Позиция меню</div>
+    </div>
+</div>
+<div class="container my-4">
+    <h3 class="my-5">Слайдер позиций</h3>
+    <div class="d-flex justify-content-between">
+        <div class="border border-danger p-3 mr-4">
+            <div>
+                <img title="фото объекта" src="img/plan.png">
+            </div>
+            <div class="mt-3">
+                <p class="item-name">Однокомнатная студия с видом на парк</p>
+                <div class="item-info">
+                    <p>м. Электросила Мариинская улица 7А</p>
+                    <p>Площадь общая: 58кв. м.</p>
+                    <p>Площадь жилая: 53кв. м.</p>
+                    <p>Площадь кухня: 20кв. м.</p>
+                    <p>Санузел: раздельный</p>
+                </div>
+                <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">Подробнее</div>
+            </div>
+
+        </div>
+        <div class="border border-danger p-3 mr-4">
+            <div>
+                <img title="фото объекта" src="img/plan.png">
+            </div>
+            <div class="mt-3">
+                <p class="item-name">Однокомнатная студия с видом на парк</p>
+                <div class="item-info">
+                    <p>м. Электросила Мариинская улица 7А</p>
+                    <p>Площадь общая: 58кв. м.</p>
+                    <p>Площадь жилая: 53кв. м.</p>
+                    <p>Площадь кухня: 20кв. м.</p>
+                    <p>Санузел: раздельный</p>
+                </div>
+                <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">Подробнее</div>
+            </div>
+
+        </div>
+        <div class="border border-danger p-3 mr-4">
+            <div>
+                <img title="фото объекта" src="img/plan.png">
+            </div>
+            <div class="mt-3">
+                <p class="item-name">Однокомнатная студия с видом на парк</p>
+                <div class="item-info">
+                    <p>м. Электросила Мариинская улица 7А</p>
+                    <p>Площадь общая: 58кв. м.</p>
+                    <p>Площадь жилая: 53кв. м.</p>
+                    <p>Площадь кухня: 20кв. м.</p>
+                    <p>Санузел: раздельный</p>
+                </div>
+                <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">Подробнее</div>
+            </div>
+
+        </div>
+        <div class="border border-danger p-3 mr-4">
+            <div>
+                <img title="фото объекта" src="img/plan.png">
+            </div>
+            <div class="mt-3">
+                <p class="item-name">Однокомнатная студия с видом на парк</p>
+                <div class="item-info">
+                    <p>м. Электросила Мариинская улица 7А</p>
+                    <p>Площадь общая: 58кв. м.</p>
+                    <p>Площадь жилая: 53кв. м.</p>
+                    <p>Площадь кухня: 20кв. м.</p>
+                    <p>Санузел: раздельный</p>
+                </div>
+                <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">Подробнее</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="bg-light my-4">
+    <div class="container d-flex py-4">
+        <div class="col-8">
+            <h2>Специализируемся в этих вопросах</h2>
+            <ol>
+                <li>Провести <a>экспертную оценку</a> жилья для получения кредита в банке, оформления залога и
+                    проучительства
+                </li>
+                <li>Выгодно <a>продать, купить, арендовать</a> недвижимость в любом районе города и республики</li>
+                <li>Подобрать оптимальную <a>ипотечную программу</a> с приемлимыми процентными ставками в любом
+                    государственном и коммерческом банке
+                </li>
+                <li>Согласовать перепланировку, осуществить <a>перевеод в жилой или нежилой фонд</a> для любого вида
+                    недвижимости в кратчайшие сроки. Оформим всю сопроводительную документацию
+                </li>
+                <li>Получить <a>консультации специалистов</a> по юридическим, финансовым, архитектурным и строительным
+                    вопросам.
+                </li>
+            </ol>
+        </div>
+        <div class="d-flex flex-column col-4">
+            <div class="bg-danger text-white">Консультации специалиста</div>
+            <form class="d-flex flex-column">
+                <label for="name">Ваше имя</label>
+                <input type="text" id="name">
+                <label for="phone">Ваш телефон</label>
+                <input type="text" id="phone">
+                <label for="mail">Ваш e-mail</label>
+                <input type="text" id="mail">
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="container my-4">
+    <h3 class="my-5">Новые объекты в каталоге</h3>
+    <div class="d-flex justify-content-between">
+        <div class="border border-danger p-3 mr-4">
+            <div>
+                <img title="фото объекта" src="img/plan.png">
+            </div>
+            <div class="mt-3">
+                <p class="item-name">Однокомнатная студия с видом на парк</p>
+                <div class="item-info">
+                    <p>м. Электросила Мариинская улица 7А</p>
+                    <p>Площадь общая: 58кв. м.</p>
+                    <p>Площадь жилая: 53кв. м.</p>
+                    <p>Площадь кухня: 20кв. м.</p>
+                    <p>Санузел: раздельный</p>
+                </div>
+                <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">Подробнее</div>
+            </div>
+
+        </div>
+        <div class="border border-danger p-3 mr-4">
+            <div>
+                <img title="фото объекта" src="img/plan.png">
+            </div>
+            <div class="mt-3">
+                <p class="item-name">Однокомнатная студия с видом на парк</p>
+                <div class="item-info">
+                    <p>м. Электросила Мариинская улица 7А</p>
+                    <p>Площадь общая: 58кв. м.</p>
+                    <p>Площадь жилая: 53кв. м.</p>
+                    <p>Площадь кухня: 20кв. м.</p>
+                    <p>Санузел: раздельный</p>
+                </div>
+                <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">Подробнее</div>
+            </div>
+
+        </div>
+        <div class="border border-danger p-3 mr-4">
+            <div>
+                <img title="фото объекта" src="img/plan.png">
+            </div>
+            <div class="mt-3">
+                <p class="item-name">Однокомнатная студия с видом на парк</p>
+                <div class="item-info">
+                    <p>м. Электросила Мариинская улица 7А</p>
+                    <p>Площадь общая: 58кв. м.</p>
+                    <p>Площадь жилая: 53кв. м.</p>
+                    <p>Площадь кухня: 20кв. м.</p>
+                    <p>Санузел: раздельный</p>
+                </div>
+                <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">Подробнее</div>
+            </div>
+
+        </div>
+        <div class="border border-danger p-3 mr-4">
+            <div>
+                <img title="фото объекта" src="img/plan.png">
+            </div>
+            <div class="mt-3">
+                <p class="item-name">Однокомнатная студия с видом на парк</p>
+                <div class="item-info">
+                    <p>м. Электросила Мариинская улица 7А</p>
+                    <p>Площадь общая: 58кв. м.</p>
+                    <p>Площадь жилая: 53кв. м.</p>
+                    <p>Площадь кухня: 20кв. м.</p>
+                    <p>Санузел: раздельный</p>
+                </div>
+                <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">Подробнее</div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="bg-light my-4">
+    <form class="d-flex justify-content-center">
+        <input type="text" placeholder="Ваше имя" class="m-3">
+        <input type="text" placeholder="Ваш телефон" class="m-3">
+        <button type="submit" class="m-3 bg-danger text-white">Отправить</button>
+    </form>
+</div>
+<div class="container">
+    <h2>Наша компания - наши специалисты</h2>
+    <div class="d-flex">
+        <div class="d-flex col-6">
+            <div>
+                <img title="фото специалиста" class="rounded-circle" src="img/photo1.png">
+            </div>
+            <div class="d-flex flex-column">
+                <div>Борщевский Андрей Михайлович</div>
+                <div>Руководитель отдела продаж</div>
+                <div>+7 (812) 911 06 26</div>
+                <div>Borsh@cnp.spn.ru</div>
+            </div>
+        </div>
+        <div class="col-6">
+            <div>Более 15 лет наше агенство работает на рынке недвижимости Санкт-Петербурга и Ленинградской области.
+                Специализируемся на продаже квартир на первичном и вторичном рынках жилья. Помогаем оформлять сделаки с
+                привлечением заиствованных средств, субсидий и сертификатов.
+            </div>
+            <div>Повышенное внимание уделяем вопросам правовой защищенности потребителей, проводим правовую историю
+                продаваемых объектов. Вы ищите надежное агентство недвижимости? Обращайтесь в «Центр Продажи
+                Недвижимости»
+            </div>
+            <div class="d-flex">
+                <div class="bg-danger text-white">Лицензии</div>
+                <div class="bg-danger text-white">Сертификаты</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="position-relative">
+    <div id="map"></div>
+    <div class="d-flex justify-content-center align-items-center position-absolute bg-danger text-white p-4 w-100"
+         style="bottom:0">
+        <div class="mx-4">Не нашли подходящего варианта?</div>
+        <div class="mx-4 border border-white rounded-circle px-3 py-3">Свяжитесь с нами</div>
+    </div>
+</div>
+<footer>
+    Тут нижнее меню
+    <script src="http://api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+    <script src="js/script.js"></script>
+</footer>
+</body>
+</html>
