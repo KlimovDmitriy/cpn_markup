@@ -17,41 +17,87 @@
 <body>
 <nav class="container navbar navbar-expand-lg navbar-light pb-3">
     <a class="navbar-brand" href="#"><img title="лого" src="img/logo.png"></a>
-
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">О компании</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Услуги</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Отзывы</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Контакты</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Полезная информация</a>
-            </li>
-        </ul>
+    <div class="d-flex flex-column ml-5" style="width: 100%">
+        <div class="row justify-content-end"><b>+7 (812) 912-13-63</b></div>
+        <div class="row">
+            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О компании</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Услуги</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Отзывы</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Полезная информация</a>
+                    </li>
+                </ul>
+                <div class="text-white bg-danger px-3 py-1">Обратная связь</div>
+            </div>
+        </div>
     </div>
+
 </nav>
-<div class="top-banner position-relative">
+<div class="top-banner d-flex align-items-end position-relative">
+    <div class="position-absolute text-white banner-text">
+        <div class="position-relative">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="456px" height="60px">
+                <path fill-rule="evenodd" opacity="0.988" fill="rgb(180, 0, 0)"
+                      d="M-0.000,0.000 L456.000,0.000 L456.000,0.000 L456.000,60.000 L456.000,60.000 L-0.000,60.000 L-0.000,60.000 L-0.000,0.000 L-0.000,0.000 Z"/>
+            </svg>
+            <p class="position-absolute">Продажа помещения</p>
+        </div>
+        <div class="position-relative" style="margin-top: -7px">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="349px" height="60px">
+                <path fill-rule="evenodd" opacity="0.988" fill="rgb(180, 0, 0)"
+                      d="M-0.000,0.000 L349.000,0.000 L349.000,0.000 L349.000,60.000 L349.000,60.000 L-0.000,60.000 L-0.000,60.000 L-0.000,0.000 L-0.000,0.000 Z"/>
+            </svg>
+            <p class="position-absolute">на Невском 126</p>
+        </div>
+        <div class="position-relative" style="margin-top: -8px">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="180px" height="60px">
+                <path fill-rule="evenodd" opacity="0.988" fill="rgb(180, 0, 0)"
+                      d="M-0.000,0.000 L180.000,0.000 L180.000,0.000 L180.000,60.000 L180.000,60.000 L-0.000,60.000 L-0.000,60.000 L-0.000,0.000 L-0.000,0.000 Z"/>
+            </svg>
+            <p class="position-absolute">250м<sup>2</sup></p>
+        </div>
+    </div>
     <div class="container">
-        <div>Позиция меню</div>
-        <div>Позиция меню</div>
-        <div>Позиция меню</div>
-        <div>Позиция меню</div>
+        <div class="row text-white justify-content-between">
+            <div class="py-4 px-5" style="background-image: url('img/menu1.png')"><a>Жилая недвижимость</a></div>
+            <div class="py-4 px-4" style="background-image: url('img/menu2.png')"><a>Коммерческая недвижимость</a></div>
+            <div class="py-4 px-4" style="background-image: url('img/menu3.png')"><a>Загородная недвижимость</a></div>
+            <div class="py-4 px-5" style="background-image: url('img/menu4.png')"><a>Выкуп квартир</a></div>
+        </div>
     </div>
 </div>
 <div class="container my-4">
     <div class="row col">
-        <h3 class="my-5">Слайдер позиций</h3>
+        <div class="d-flex justify-content-between w-100" >
+            <h3 class="my-5">Слайдер позиций</h3>
+            <div class="d-flex my-5 align-items-center">
+                <div class="border border-danger  text-red px-2 py-1 mr-3"> < </div>
+                <div class="border border-danger text-red px-2 py-1"> > </div>
+            </div>
+        </div>
         <div class="d-flex justify-content-between ">
             <div class="border border-danger p-3 mr-4">
                 <div>
@@ -132,7 +178,7 @@
         </div>
     </div>
 </div>
-<div class="bg-light my-4">
+<div class="my-4" style="background-image: url('img/question-bg.png')">
     <div class="container py-4">
         <div class="row">
             <div class="col-8">
@@ -178,7 +224,13 @@
 </div>
 <div class="container my-4">
     <div class="row col">
-        <h3 class="my-5">Новые объекты в каталоге</h3>
+        <div class="d-flex justify-content-between w-100" >
+            <h3 class="my-5">Новые объекты в каталоге</h3>
+            <div class="d-flex my-5 align-items-center">
+                <div class="border border-danger  text-red px-2 py-1 mr-3"> < </div>
+                <div class="border border-danger text-red px-2 py-1"> > </div>
+            </div>
+        </div>
         <div class="d-flex justify-content-between ">
             <div class="border border-danger p-3 mr-4">
                 <div>
@@ -270,8 +322,12 @@
     <h3>Наша компания - наши специалисты</h3>
     <div class="d-flex mt-5">
         <div class="d-flex col-6">
-            <div>
+            <div class="d-flex flex-column align-items-center">
                 <img title="фото специалиста" class="rounded-circle" src="img/photo1.png">
+                <div class="d-flex mt-5 align-items-center">
+                    <div class="border border-danger  text-red px-2 py-1 mr-3"> < </div>
+                    <div class="border border-danger text-red px-2 py-1"> > </div>
+                </div>
             </div>
             <div class="d-flex flex-column ml-4">
                 <div>Борщевский Андрей Михайлович</div>
@@ -346,7 +402,8 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="footer-menu">© 2020. Центр Продажи Недвижимости. Все права защищены || <a>Вход для сотрудников</a></div>
+        <div class="footer-menu">© 2020. Центр Продажи Недвижимости. Все права защищены || <a>Вход для сотрудников</a>
+        </div>
     </div>
     <script src="http://api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
     <script src="js/script.js"></script>

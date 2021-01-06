@@ -4,7 +4,7 @@ body{
 ol{
     padding-inline-start: 15px;
 }
-.text-md{
+.text-md, nav{
     font-size: 16px;
 }
 .item-info, .contacts, .footer-menu{
@@ -30,6 +30,9 @@ ol{
 }
 body .bg-danger{
     background-color: rgb(180, 0, 0) !important;
+}
+border-danger{
+    color: rgb(180, 0, 0) !important;
 }
 h3 {
     font-size: 24px;
@@ -64,4 +67,17 @@ h3 {
 }
 .text-red{
     color: rgb(180, 0, 0);
+}
+.banner-text{
+    top:130px;
+    left: 390px;
+    font-size: 42px;
+}
+.banner-text p{
+    margin-bottom: 0;
+    bottom: 0;
+    left: 20px;
+}
+svg{
+    opacity: 0.8;
 }
