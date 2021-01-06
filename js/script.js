@@ -15,7 +15,7 @@ function init() {
             // Опции.
             // Своё изображение иконки метки.
             iconLayout: 'default#imageWithContent',
-            iconImageHref: '../img/map-icon.png',
+            iconImageHref: 'img/map-icon.png',
             // Размеры метки.
             iconImageSize: [25, 30],
             // Смещение левого верхнего угла иконки относительно
