@@ -27,3 +27,75 @@ function init() {
     // Добавляем все метки на карту.
     myMap.geoObjects.add(myPlacemark2)
 }
+
+$(document).ready(function () {
+    var owlPosition = $("#owl-position");
+    var owlSlider = $("#owl-slider");
+    var owlPhoto = $("#owl-photo");
+    owlPosition.owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    owlSlider.owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:4
+            }
+        }
+    })
+    owlPhoto.owlCarousel({
+        loop:true,
+        margin:20,
+        nav:false,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        }
+    })
+    $("#position-prev").click(function(){
+        owlPosition.trigger('prev.owl.carousel');
+    })
+    $("#position-next").click(function(){
+        owlPosition.trigger('next.owl.carousel');
+    })
+    $("#slider-prev").click(function(){
+        owlSlider.trigger('prev.owl.carousel');
+    })
+    $("#slider-next").click(function(){
+        owlSlider.trigger('next.owl.carousel');
+    })
+    $("#photo-prev").click(function(){
+        owlPhoto.trigger('prev.owl.carousel');
+    })
+    $("#photo-next").click(function(){
+        owlPhoto.trigger('next.owl.carousel');
+    })
+})

@@ -2,9 +2,12 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
           integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
           crossorigin=""/>
@@ -15,40 +18,64 @@
     <title>Центр продажи недвижимости</title>
 </head>
 <body>
-<nav class="container navbar navbar-expand-lg navbar-light pb-3">
-    <a class="navbar-brand" href="#"><img title="лого" src="img/logo.png"></a>
-    <div class="d-flex flex-column ml-5" style="width: 100%">
-        <div class="row justify-content-end"><b>+7 (812) 912-13-63</b></div>
-        <div class="row">
-            <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Главная <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">О компании</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Услуги</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Отзывы</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Контакты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Полезная информация</a>
-                    </li>
-                </ul>
-                <div class="text-white bg-danger px-3 py-1">Обратная связь</div>
+<div class="container pb-3 mt-3 header">
+    <div class="row align-items-lg-center align-items-center">
+        <div class="col-lg-3 col-sm-5 col-9 order-lg-1 order-md-1 order-2">
+            <a class="navbar-brand" href="#"><img title="лого" src="img/logo.png" class="w-100"></a>
+        </div>
+        <div class="col-lg-7 navbar navbar-expand-lg navbar-light d-none d-lg-flex d-md-none order-lg-2 order-md-2 order-2">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="row">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">О компании</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Услуги</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Отзывы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Полезная информация</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
+        <div class="dropdown navbar-light d-lg-none d-md-flex d-sm-none d-flex col-2">
+            <button class="" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenu2" style="">
+                <a class="nav-link" href="#">Главная</a>
+                <a class="nav-link" href="#">О компании</a>
+                <a class="nav-link" href="#">Услуги</a>
+                <a class="nav-link" href="#">Отзывы</a>
+                <a class="nav-link" href="#">Контакты</a>
+                <a class="nav-link" href="#">Полезная информация</a>
+            </div>
+        </div>
+        <div class="col-lg-2 col-sm-5 order-lg-3 order-md-3 order-3">
+            <div class=""><b>+7 (812) 912-13-63</b></div>
+            <div class="text-white bg-danger px-3 py-1">Обратная связь</div>
+        </div>
     </div>
-
-</nav>
+    <!--    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"-->
+    <!--            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">-->
+    <!--        <span class="navbar-toggler-icon"></span>-->
+    <!--    </button>-->
+</div>
 <div class="top-banner d-flex align-items-end position-relative">
-    <div class="position-absolute text-white banner-text">
+    <div class="position-absolute text-white banner-text d-none d-lg-block d-md-block">
         <div class="position-relative">
             <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -81,27 +108,65 @@
         </div>
     </div>
     <div class="container">
-        <div class="row text-white justify-content-between">
-            <div class="py-4 px-5" style="background-image: url('img/menu1.png')"><a>Жилая недвижимость</a></div>
-            <div class="py-4 px-4" style="background-image: url('img/menu2.png')"><a>Коммерческая недвижимость</a></div>
-            <div class="py-4 px-4" style="background-image: url('img/menu3.png')"><a>Загородная недвижимость</a></div>
-            <div class="py-4 px-5" style="background-image: url('img/menu4.png')"><a>Выкуп квартир</a></div>
+        <div class="row banner-links">
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+                <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
+                     style="background-image: url(img/menu1.png);">Жилая недвижимость
+                </div>
+            </a>
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+                <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
+                     style="background-image: url(img/menu2.png);">Коммерческая недвижимость
+                </div>
+            </a>
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+                <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
+                     style="background-image: url(img/menu3.png);">Загородная недвижимость
+                </div>
+            </a>
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+                <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
+                     style="background-image: url(img/menu4.png);">Выкуп квартир
+                </div>
+            </a>
         </div>
     </div>
 </div>
 <div class="container my-4">
-    <div class="row col">
-        <div class="d-flex justify-content-between w-100" >
+    <div class="row justify-content-between">
+        <div class="col-10">
             <h3 class="my-5">Слайдер позиций</h3>
-            <div class="d-flex my-5 align-items-center">
-                <div class="border border-danger  text-red px-2 py-1 mr-3"> < </div>
-                <div class="border border-danger text-red px-2 py-1"> > </div>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-end">
+            <img class="mr-3 pointer" src="img/prev.png" id="slider-prev">
+            <img src="img/next.png" class="pointer" id="slider-next">
+        </div>
+    </div>
+    <div class="owl-carousel" id="owl-slider">
+        <div class="item">
+            <div class="border border-danger p-2">
+                <div>
+                    <img title="фото объекта" src="img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="d-flex justify-content-between ">
-            <div class="border border-danger p-3 mr-4">
+        <div class="item ">
+            <div class="border border-danger p-2">
                 <div>
-                    <img title="фото объекта" src="img/plan.png">
+                    <img title="фото объекта" src="img/plan.png" class="w-100">
                 </div>
                 <div class="mt-3">
                     <p class="item-name">Однокомнатная студия с видом на парк</p>
@@ -116,11 +181,12 @@
                         Подробнее
                     </div>
                 </div>
-
             </div>
-            <div class="border border-danger p-3 mr-4">
+        </div>
+        <div class="item">
+            <div class="border border-danger p-2">
                 <div>
-                    <img title="фото объекта" src="img/plan.png">
+                    <img title="фото объекта" src="img/plan.png" class="w-100">
                 </div>
                 <div class="mt-3">
                     <p class="item-name">Однокомнатная студия с видом на парк</p>
@@ -135,11 +201,12 @@
                         Подробнее
                     </div>
                 </div>
-
             </div>
-            <div class="border border-danger p-3 mr-4">
+        </div>
+        <div class="item">
+            <div class="border border-danger p-2 ">
                 <div>
-                    <img title="фото объекта" src="img/plan.png">
+                    <img title="фото объекта" src="img/plan.png" class="w-100">
                 </div>
                 <div class="mt-3">
                     <p class="item-name">Однокомнатная студия с видом на парк</p>
@@ -154,26 +221,6 @@
                         Подробнее
                     </div>
                 </div>
-
-            </div>
-            <div class="border border-danger p-3 mr-4">
-                <div>
-                    <img title="фото объекта" src="img/plan.png">
-                </div>
-                <div class="mt-3">
-                    <p class="item-name">Однокомнатная студия с видом на парк</p>
-                    <div class="item-info">
-                        <p>м. Электросила Мариинская улица 7А</p>
-                        <p>Площадь общая: 58кв. м.</p>
-                        <p>Площадь жилая: 53кв. м.</p>
-                        <p>Площадь кухня: 20кв. м.</p>
-                        <p>Санузел: раздельный</p>
-                    </div>
-                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
-                        Подробнее
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
@@ -181,8 +228,8 @@
 <div class="my-4" style="background-image: url('img/question-bg.png')">
     <div class="container py-4">
         <div class="row">
-            <div class="col-8">
-                <h2>Специализируемся в этих вопросах</h2>
+            <div class="col-lg-8 col-sm-12">
+                <h3>Специализируемся в этих вопросах</h3>
                 <ol>
                     <li>Провести <a class="text-red">экспертную оценку</a> жилья для получения кредита в банке,
                         оформления залога и
@@ -205,7 +252,7 @@
                     </li>
                 </ol>
             </div>
-            <div class="d-flex flex-column col-4">
+            <div class="d-flex flex-column col-lg-4 col-sm-12">
                 <div class="bg-danger text-white p-3 d-flex justify-content-center ">Консультации специалиста</div>
                 <div class="bg-white px-4 py-3">
                     <form class="d-flex flex-column">
@@ -223,18 +270,40 @@
     </div>
 </div>
 <div class="container my-4">
-    <div class="row col">
-        <div class="d-flex justify-content-between w-100" >
-            <h3 class="my-5">Новые объекты в каталоге</h3>
-            <div class="d-flex my-5 align-items-center">
-                <div class="border border-danger  text-red px-2 py-1 mr-3"> < </div>
-                <div class="border border-danger text-red px-2 py-1"> > </div>
+    <div class="row justify-content-between">
+        <div class="col-10">
+            <h3 class="my-5">Новые позиции в каталоге</h3>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-end">
+            <img class="mr-3 pointer" src="img/prev.png" id="position-prev">
+            <img src="img/next.png" id="position-next" class="pointer">
+        </div>
+    </div>
+    <div class="owl-carousel" id="owl-position">
+        <div class="item">
+            <div class="border border-danger p-2">
+                <div>
+                    <img title="фото объекта" src="img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="d-flex justify-content-between ">
-            <div class="border border-danger p-3 mr-4">
+        <div class="item">
+            <div class="border border-danger p-2">
                 <div>
-                    <img title="фото объекта" src="img/plan.png">
+                    <img title="фото объекта" src="img/plan.png" class="w-100">
                 </div>
                 <div class="mt-3">
                     <p class="item-name">Однокомнатная студия с видом на парк</p>
@@ -249,11 +318,12 @@
                         Подробнее
                     </div>
                 </div>
-
             </div>
-            <div class="border border-danger p-3 mr-4">
+        </div>
+        <div class="item">
+            <div class="border border-danger p-2">
                 <div>
-                    <img title="фото объекта" src="img/plan.png">
+                    <img title="фото объекта" src="img/plan.png" class="w-100">
                 </div>
                 <div class="mt-3">
                     <p class="item-name">Однокомнатная студия с видом на парк</p>
@@ -268,11 +338,12 @@
                         Подробнее
                     </div>
                 </div>
-
             </div>
-            <div class="border border-danger p-3 mr-4">
+        </div>
+        <div class="item">
+            <div class="border border-danger p-2 ">
                 <div>
-                    <img title="фото объекта" src="img/plan.png">
+                    <img title="фото объекта" src="img/plan.png" class="w-100">
                 </div>
                 <div class="mt-3">
                     <p class="item-name">Однокомнатная студия с видом на парк</p>
@@ -287,56 +358,57 @@
                         Подробнее
                     </div>
                 </div>
-
-            </div>
-            <div class="border border-danger p-3 mr-4">
-                <div>
-                    <img title="фото объекта" src="img/plan.png">
-                </div>
-                <div class="mt-3">
-                    <p class="item-name">Однокомнатная студия с видом на парк</p>
-                    <div class="item-info">
-                        <p>м. Электросила Мариинская улица 7А</p>
-                        <p>Площадь общая: 58кв. м.</p>
-                        <p>Площадь жилая: 53кв. м.</p>
-                        <p>Площадь кухня: 20кв. м.</p>
-                        <p>Санузел: раздельный</p>
-                    </div>
-                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
-                        Подробнее
-                    </div>
-                </div>
-
             </div>
         </div>
     </div>
 </div>
 <div class="bg-light my-4">
-    <form class="d-flex justify-content-center">
+    <form class="row d-flex justify-content-center">
         <input type="text" placeholder="Ваше имя" class="m-3 p-2">
         <input type="text" placeholder="Ваш телефон" class="m-3 p-2">
         <div class="m-3 bg-danger text-white py-2 px-5 btn">Отправить</div>
     </form>
 </div>
 <div class="container my-4">
-    <h3>Наша компания - наши специалисты</h3>
-    <div class="d-flex mt-5">
-        <div class="d-flex col-6">
-            <div class="d-flex flex-column align-items-center">
-                <img title="фото специалиста" class="rounded-circle" src="img/photo1.png">
-                <div class="d-flex mt-5 align-items-center">
-                    <div class="border border-danger  text-red px-2 py-1 mr-3"> < </div>
-                    <div class="border border-danger text-red px-2 py-1"> > </div>
+    <div class="row">
+        <div class="col-12">
+            <h3>Наша компания - наши специалисты</h3>
+        </div>
+    </div>
+    <div class="row d-flex mt-5">
+        <div class="d-flex col-lg-6 col-sm-12 mb-sm-5 align-items-sm-center align-items-lg-start flex-column">
+            <div class="row d-flex w-100 owl-carousel" id="owl-photo">
+                <div class="item d-flex align-items-center">
+                    <div class="col-4">
+                        <img title="фото специалиста" class="w-100" src="img/photo1.png">
+                    </div>
+                    <div class="col-8 ">
+                        <div>Борщевский Андрей Михайлович</div>
+                        <div class="item-info mb-lg-5 mb-md-5 mb-sm-5 mb-3">Руководитель отдела продаж</div>
+                        <div class="text-red contacts">+7 (812) 911 06 26</div>
+                        <div class="text-red contacts">Borsh@cnp.spn.ru</div>
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center">
+                    <div class="col-4">
+                        <img title="фото специалиста" class="w-100" src="img/photo1.png">
+                    </div>
+                    <div class="col-8">
+                        <div>Борщевский Андрей Михайлович</div>
+                        <div class="item-info mb-lg-5 mb-md-5 mb-sm-5 mb-3">Руководитель отдела продаж</div>
+                        <div class="text-red contacts">+7 (812) 911 06 26</div>
+                        <div class="text-red contacts">Borsh@cnp.spn.ru</div>
+                    </div>
                 </div>
             </div>
-            <div class="d-flex flex-column ml-4">
-                <div>Борщевский Андрей Михайлович</div>
-                <div class="item-info mb-5">Руководитель отдела продаж</div>
-                <div class="text-red contacts">+7 (812) 911 06 26</div>
-                <div class="text-red contacts">Borsh@cnp.spn.ru</div>
+            <div class="row d-flex w-100 mb-4 mb-sm-0">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+                    <img src="img/prev.png" class="mr-3 pointer" id="photo-prev">
+                    <img src="img/next.png" class="pointer" id="photo-next">
+                </div>
             </div>
         </div>
-        <div class="col-7 text-md">
+        <div class="col-lg-6 col-sm-12 text-md">
             <div>Более 15 лет наше агенство работает на рынке недвижимости Санкт-Петербурга и Ленинградской области.
                 Специализируемся на продаже квартир на первичном и вторичном рынках жилья. Помогаем оформлять сделаки с
                 привлечением заиствованных средств, субсидий и сертификатов.
@@ -346,8 +418,8 @@
                 Недвижимости»
             </div>
             <div class="d-flex justify-content-between mt-3">
-                <div class="bg-danger text-white btn company-btn">Лицензии</div>
-                <div class="bg-danger text-white btn company-btn">Сертификаты</div>
+                <div class="bg-danger text-white btn company-btn col-5 d-flex justify-content-center">Лицензии</div>
+                <div class="bg-danger text-white btn company-btn col-5 d-flex justify-content-center">Сертификаты</div>
             </div>
         </div>
     </div>
@@ -362,23 +434,23 @@
 </div>
 <footer class="container my-5">
     <div class="row">
-        <div class="mr-5">
-            <img title="Logo" src="img/logo.png">
+        <div class="col-lg-3 col-sm-12 info col-md-3">
+            <img title="Logo" src="img/logo.png" class="w-100">
             <p class="mb-2"><b><i class="fas fa-map-marker-alt"></i> Большая Конюшенная, д 29</b></p>
             <p class="mb-2 text-red"><i class="fa fa-phone" aria-hidden="true"></i> 8 (812) 912-13-63</p>
             <p class="mb-2"><b><i class="fa fa-envelope" aria-hidden="true"></i> cpn.spn@mail.ru</b></p>
         </div>
-        <div class="mr-5">
+        <div class="col-lg-3 col-sm-12 col-md-3">
             <p><b>Услуги</b></p>
             <div class="footer-menu d-flex flex-column">
-                <a class="mb-2">Срочная продажа недвижимости</a>
+                <a class="mb-2" href="#">Срочная продажа недвижимости</a>
                 <a class="mb-2">Квартир в центре города</a>
                 <a class="mb-2">Аренда коммерческой недвижимости</a>
                 <a class="mb-2">Продажа коммерческой недвижимости</a>
                 <a class="mb-2">Юридическое сопровождение</a>
             </div>
         </div>
-        <div class="mr-5">
+        <div class="col-lg-3 col-sm-12 col-md-3">
             <p><b>Каталог недвижимости</b></p>
             <div class="footer-menu d-flex flex-column">
                 <a class="mb-2">Жилая недвижимость</a>
@@ -392,7 +464,7 @@
                 <a class="mb-2">Контакты</a>
             </div>
         </div>
-        <div class="mr-5">
+        <div class="col-lg-3 col-sm-12 col-md-3">
             <p><b>Компания</b></p>
             <div class="footer-menu d-flex flex-column">
                 <a class="mb-2">О компании</a>
@@ -402,10 +474,16 @@
         </div>
     </div>
     <div class="row mt-5">
-        <div class="footer-menu">© 2020. Центр Продажи Недвижимости. Все права защищены || <a>Вход для сотрудников</a>
+        <div class="footer-menu col-12">© 2020. Центр Продажи Недвижимости. Все права защищены || <a>Вход для сотрудников</a>
         </div>
     </div>
-    <script src="http://api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+            integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?load=package.standard,package.geoObjects&amp;lang=ru-RU"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"
+            integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf"
+            crossorigin="anonymous"></script>
     <script src="js/script.js"></script>
 </footer>
 </body>
