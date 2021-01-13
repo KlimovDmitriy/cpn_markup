@@ -1,0 +1,358 @@
+<div class="top-banner d-flex align-items-end position-relative">
+    <div class="position-absolute text-white banner-text d-none d-lg-block d-md-block">
+        <div class="position-relative">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="456px" height="60px">
+                <path fill-rule="evenodd" opacity="0.988" fill="rgb(180, 0, 0)"
+                      d="M-0.000,0.000 L456.000,0.000 L456.000,0.000 L456.000,60.000 L456.000,60.000 L-0.000,60.000 L-0.000,60.000 L-0.000,0.000 L-0.000,0.000 Z"/>
+            </svg>
+            <p class="position-absolute">Продажа помещения</p>
+        </div>
+        <div class="position-relative" style="margin-top: -7px">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="349px" height="60px">
+                <path fill-rule="evenodd" opacity="0.988" fill="rgb(180, 0, 0)"
+                      d="M-0.000,0.000 L349.000,0.000 L349.000,0.000 L349.000,60.000 L349.000,60.000 L-0.000,60.000 L-0.000,60.000 L-0.000,0.000 L-0.000,0.000 Z"/>
+            </svg>
+            <p class="position-absolute">на Невском 126</p>
+        </div>
+        <div class="position-relative" style="margin-top: -8px">
+            <svg
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+                width="180px" height="60px">
+                <path fill-rule="evenodd" opacity="0.988" fill="rgb(180, 0, 0)"
+                      d="M-0.000,0.000 L180.000,0.000 L180.000,0.000 L180.000,60.000 L180.000,60.000 L-0.000,60.000 L-0.000,60.000 L-0.000,0.000 L-0.000,0.000 Z"/>
+            </svg>
+            <p class="position-absolute">250м<sup>2</sup></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row banner-links">
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+                <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
+                     style="background-image: url(img/menu1.png);">Жилая недвижимость
+                </div>
+            </a>
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+                <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
+                     style="background-image: url(img/menu2.png);">Коммерческая недвижимость
+                </div>
+            </a>
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+                <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
+                     style="background-image: url(img/menu3.png);">Загородная недвижимость
+                </div>
+            </a>
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+                <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
+                     style="background-image: url(img/menu4.png);">Выкуп квартир
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+<div class="container my-4">
+    <div class="row justify-content-between">
+        <div class="col-10">
+            <h3 class="my-5">Слайдер позиций</h3>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-end">
+            <img class="mr-3 pointer" src="<?=SITE_TEMPLATE_PATH?>/markup/img/prev.png" id="slider-prev">
+            <img src="<?=SITE_TEMPLATE_PATH?>/markup/img/next.png" class="pointer" id="slider-next">
+        </div>
+    </div>
+    <div class="owl-carousel" id="owl-slider">
+        <div class="item">
+            <div class="border border-danger p-2">
+                <div>
+                    <img title="фото объекта" src="<?=SITE_TEMPLATE_PATH?>/markup/img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item ">
+            <div class="border border-danger p-2">
+                <div>
+                    <img title="фото объекта" src="<?=SITE_TEMPLATE_PATH?>/markup/img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="border border-danger p-2">
+                <div>
+                    <img title="фото объекта" src="<?=SITE_TEMPLATE_PATH?>/markup/img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="border border-danger p-2 ">
+                <div>
+                    <img title="фото объекта" src="<?=SITE_TEMPLATE_PATH?>/markup/img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="my-4" style="background-image: url('img/question-bg.png')">
+    <div class="container py-4">
+        <div class="row">
+            <div class="col-lg-8 col-sm-12">
+                <h3>Специализируемся в этих вопросах</h3>
+                <ol>
+                    <li>Провести <a class="text-red">экспертную оценку</a> жилья для получения кредита в банке,
+                        оформления залога и
+                        проучительства
+                    </li>
+                    <li>Выгодно <a class="text-red">продать, купить, арендовать</a> недвижимость в любом районе города и
+                        республики
+                    </li>
+                    <li>Подобрать оптимальную <a class="text-red">ипотечную программу</a> с приемлимыми процентными
+                        ставками в любом
+                        государственном и коммерческом банке
+                    </li>
+                    <li>Согласовать перепланировку, осуществить <a class="text-red">перевеод в жилой или нежилой
+                            фонд</a> для любого вида
+                        недвижимости в кратчайшие сроки. Оформим всю сопроводительную документацию
+                    </li>
+                    <li>Получить <a class="text-red">консультации специалистов</a> по юридическим, финансовым,
+                        архитектурным и строительным
+                        вопросам.
+                    </li>
+                </ol>
+            </div>
+            <div class="d-flex flex-column col-lg-4 col-sm-12">
+                <div class="bg-danger text-white p-3 d-flex justify-content-center ">Консультации специалиста</div>
+                <div class="bg-white px-4 py-3">
+                    <form class="d-flex flex-column">
+                        <label for="name" class="item-info mb-2 ">Ваше имя</label>
+                        <input type="text" id="name" class="py-2">
+                        <label for="phone" class="item-info my-2">Ваш телефон</label>
+                        <input type="text" id="phone" class="py-2">
+                        <label for="mail" class="item-info my-2">Ваш e-mail</label>
+                        <input type="text" id="mail" class="py-2">
+                        <div class="bg-danger text-white p-3 mt-3 btn">Отправить заявку</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container my-4">
+    <div class="row justify-content-between">
+        <div class="col-10">
+            <h3 class="my-5">Новые позиции в каталоге</h3>
+        </div>
+        <div class="col-2 d-flex align-items-center justify-content-end">
+            <img class="mr-3 pointer" src="<?=SITE_TEMPLATE_PATH?>/markup/img/prev.png" id="position-prev">
+            <img src="<?=SITE_TEMPLATE_PATH?>/markup/img/next.png" id="position-next" class="pointer">
+        </div>
+    </div>
+    <div class="owl-carousel" id="owl-position">
+        <div class="item">
+            <div class="border border-danger p-2">
+                <div>
+                    <img title="фото объекта" src="<?=SITE_TEMPLATE_PATH?>/markup/img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="border border-danger p-2">
+                <div>
+                    <img title="фото объекта" src="<?=SITE_TEMPLATE_PATH?>/markup/img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="border border-danger p-2">
+                <div>
+                    <img title="фото объекта" src="<?=SITE_TEMPLATE_PATH?>/markup/img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="border border-danger p-2 ">
+                <div>
+                    <img title="фото объекта" src="<?=SITE_TEMPLATE_PATH?>/markup/img/plan.png" class="w-100">
+                </div>
+                <div class="mt-3">
+                    <p class="item-name">Однокомнатная студия с видом на парк</p>
+                    <div class="item-info">
+                        <p>м. Электросила Мариинская улица 7А</p>
+                        <p>Площадь общая: 58кв. м.</p>
+                        <p>Площадь жилая: 53кв. м.</p>
+                        <p>Площадь кухня: 20кв. м.</p>
+                        <p>Санузел: раздельный</p>
+                    </div>
+                    <div class="bg-danger text-white mt-5 p-3 d-flex justify-content-center align-items-center btn">
+                        Подробнее
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="bg-light my-4">
+    <form class="row mx-0 d-flex justify-content-center">
+        <input type="text" placeholder="Ваше имя" class="m-3 p-2">
+        <input type="text" placeholder="Ваш телефон" class="m-3 p-2">
+        <div class="m-3 bg-danger text-white py-2 px-5 btn">Отправить</div>
+    </form>
+</div>
+<div class="container my-4">
+    <div class="row">
+        <div class="col-12">
+            <h3>Наша компания - наши специалисты</h3>
+        </div>
+    </div>
+    <div class="row d-flex mt-5">
+        <div class="d-flex col-lg-6 col-sm-12 mb-sm-5 align-items-sm-center align-items-lg-start flex-column">
+            <div class="row d-flex w-100 owl-carousel" id="owl-photo">
+                <div class="item d-flex align-items-center">
+                    <div class="col-4">
+                        <img title="фото специалиста" class="w-100" src="<?=SITE_TEMPLATE_PATH?>/markup/img/photo1.png">
+                    </div>
+                    <div class="col-8 ">
+                        <div>Борщевский Андрей Михайлович</div>
+                        <div class="item-info mb-lg-5 mb-md-5 mb-sm-5 mb-3">Руководитель отдела продаж</div>
+                        <div class="text-red contacts">+7 (812) 911 06 26</div>
+                        <div class="text-red contacts">Borsh@cnp.spn.ru</div>
+                    </div>
+                </div>
+                <div class="item d-flex align-items-center">
+                    <div class="col-4">
+                        <img title="фото специалиста" class="w-100" src="<?=SITE_TEMPLATE_PATH?>/markup/img/photo1.png">
+                    </div>
+                    <div class="col-8">
+                        <div>Борщевский Андрей Михайлович</div>
+                        <div class="item-info mb-lg-5 mb-md-5 mb-sm-5 mb-3">Руководитель отдела продаж</div>
+                        <div class="text-red contacts">+7 (812) 911 06 26</div>
+                        <div class="text-red contacts">Borsh@cnp.spn.ru</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-flex w-100 mb-4 mb-sm-0">
+                <div class="col-lg-4 col-sm-12 d-flex align-items-center justify-content-center">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/markup/img/prev.png" class="mr-3 pointer" id="photo-prev">
+                    <img src="<?=SITE_TEMPLATE_PATH?>/markup/img/next.png" class="pointer" id="photo-next">
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6 col-sm-12 text-md">
+            <div>Более 15 лет наше агенство работает на рынке недвижимости Санкт-Петербурга и Ленинградской области.
+                Специализируемся на продаже квартир на первичном и вторичном рынках жилья. Помогаем оформлять сделаки с
+                привлечением заиствованных средств, субсидий и сертификатов.
+            </div>
+            <div>Повышенное внимание уделяем вопросам правовой защищенности потребителей, проводим правовую историю
+                продаваемых объектов. Вы ищите надежное агентство недвижимости? Обращайтесь в «Центр Продажи
+                Недвижимости»
+            </div>
+            <div class="d-flex justify-content-between mt-3">
+                <div class="bg-danger text-white btn company-btn col-5 d-flex justify-content-center">Лицензии</div>
+                <div class="bg-danger text-white btn company-btn col-5 d-flex justify-content-center">Сертификаты</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="position-relative">
+    <div id="map"></div>
+    <div class="d-flex justify-content-center align-items-center position-absolute bg-danger text-white p-4 w-100 map-banner"
+         style="bottom:0">
+        <div class="mx-4">Не нашли подходящего варианта?</div>
+        <div class="mx-4 border border-white text-white px-3 py-2 btn callback-btn ">Свяжитесь с нами</div>
+    </div>
+</div>

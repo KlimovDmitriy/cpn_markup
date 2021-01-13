@@ -1,0 +1,59 @@
+<?
+$aMenuLinks = array(
+    array(
+        "Главная",
+        "/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Жилая недвижимость",
+        "/zhilaya/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Коммерческая недвижимость",
+        "/vykup-kvartir/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "О компании",
+        "/about/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Услуги",
+        "/uslugi/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Отзывы",
+        "/about/#panel3",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Контакты",
+        "/kontakty/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Полезная информация",
+        "/info/",
+        array(),
+        array(),
+        ""
+    )
+);

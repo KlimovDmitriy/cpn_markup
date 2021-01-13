@@ -1,0 +1,24 @@
+<?
+$aMenuLinks = array(
+    array(
+        "Статьи",
+        "/info/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Вопрос-ответ",
+        "/vopros/",
+        array(),
+        array(),
+        ""
+    ),
+    array(
+        "Контакты",
+        "/kontakty/",
+        array(),
+        array(),
+        ""
+    )
+);
