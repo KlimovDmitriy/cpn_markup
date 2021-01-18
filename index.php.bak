@@ -33,12 +33,12 @@
     </div>
     <div class="container">
         <div class="row banner-links">
-            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none" href="/zhilaya/">
                 <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
                      style="background-image: url(img/menu1.png);">Жилая недвижимость
                 </div>
             </a>
-            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none" href="/commerce/">
                 <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
                      style="background-image: url(img/menu2.png);">Коммерческая недвижимость
                 </div>
@@ -48,7 +48,7 @@
                      style="background-image: url(img/menu3.png);">Загородная недвижимость
                 </div>
             </a>
-            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none">
+            <a class="col-lg-3 col-md-3 col-sm-12 d-flex text-decoration-none" href="/vykup-kvartir/" >
                 <div class="justify-content-center align-items-center w-100 px-2 d-flex h-100 btn text-white"
                      style="background-image: url(img/menu4.png);">Выкуп квартир
                 </div>
@@ -353,6 +353,6 @@
     <div class="d-flex justify-content-center align-items-center position-absolute bg-danger text-white p-4 w-100 map-banner"
          style="bottom:0">
         <div class="mx-4">Не нашли подходящего варианта?</div>
-        <div class="mx-4 border border-white text-white px-3 py-2 btn callback-btn ">Свяжитесь с нами</div>
+        <a href="#contacts-form" data-toggle="modal" class="mx-4 border border-white text-white px-3 py-2 btn callback-btn ">Свяжитесь с нами</a>
     </div>
 </div>
